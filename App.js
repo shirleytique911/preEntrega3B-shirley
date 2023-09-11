@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const port = 3000; // Puedes cambiar el puerto según tus preferencias
+const port = 3000; // se puede cambiar el puerto 
 
-const { ProductManager } = require('./productManager'); // Asegúrate de que la ruta sea correcta
+const { ProductManager } = require('./products'); // Asegúrate de que la ruta sea correcta
 
 const productManager = new ProductManager();
 
