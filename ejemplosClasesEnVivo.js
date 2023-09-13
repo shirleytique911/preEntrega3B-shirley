@@ -1,6 +1,6 @@
 // let nombre ;
 
-const { resolve } = require("path")
+// const { resolve } = require("path")
 
 // nombre ="coderhouse"
 
@@ -244,29 +244,163 @@ const { resolve } = require("path")
 // ejemplo de finally
 
 
-function ejemploPromesa (){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const exito =true
-            if (exito){
-                resolve("exito")
-            }else{
-                reject("error")
-            }
-        }, 3000)
+// function ejemploPromesa (){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const exito =true
+//             if (exito){
+//                 resolve("exito")
+//             }else{
+//                 reject("error")
+//             }
+//         }, 3000)
         
-    })
-}
+//     })
+// }
 
-ejemploPromesa()
-.then((resultado) =>{
-    console.log(resultado)
+// ejemploPromesa()
+// .then((resultado) =>{
+//     console.log(resultado)
 
-})
-.catch((error)=>{
-    console.log(error)
-})
+// })
+// .catch((error)=>{
+//     console.log(error)
+// })
 
-.finally(()=>{
-    console.log("la promesa a finalizado")
-})
+// .finally(()=>{
+//     console.log("la promesa a finalizado")
+// })
+
+
+// ejemplo clase 4
+// const fs =require("fs")
+
+// const guardarFechaYHora= () => {
+//      const fechaYHhora = new Date().toString()
+
+
+//      try{
+//         fs.writeFileSync("fyh.txt",fechaYHhora)
+//         console.log("Archivo creado correctamente")
+//      } catch(error){
+//         throw new Error("No puedo realizar la accion")
+//      }
+// }
+
+// guardarFechaYHora()
+// const leerArchivo = () => {
+//     try {
+//         const data = fs.readFileSync("fyh.txt","utf-8")
+//         console.log(data)
+//     } catch (error){
+//         console.error("error de lectura")
+
+//     }
+// }
+//  ejemplo en clase 4
+// const fs = require ("fs")
+
+// const leerPackageJson =() => {
+   
+
+//     try {
+//         const data =  fs.readFileSync("package.json", "utf-8")
+//         return data
+        
+//     } catch (error){
+//         console.error("error d lectura")
+//     }
+// }
+
+// const guardarJson=()=>{
+//     const data =leerPackageJson()
+
+//     try{
+//         fs.writeFileSync("data.json", JSON.stringify(data))
+//         console.log("Archivo creado correctmente")
+
+//     }catch(error){
+//         console.error("error al crear el archivo")
+//     }
+// }
+
+// guardarJson()
+
+
+// CLASE CINCO
+
+// function numerosRandom(minimo,maximo,cantidad){
+//     return Array.from ({length: cantidad},()=> Math.floor(Math.random()*(maximo -minimo +1))+minimo)
+//   }
+  
+//   const numeros =numerosRandom(1,20,10000)
+// //   console.log(numeros)
+// const resultado ={}
+// numeros.forEach(n => resultado[n]=(resultado[n] || 0)+ 1)
+// console.log(resultado)
+
+// // const fs =require("fs/promises")
+// // const crypto =require("crypto")
+
+// // class UserManager{
+// //     constructor(){
+// //         this.fillePath ="Userios.json"
+
+// //     }
+// // async createUser(user){
+// //     const{nombre,apellido,username,password} =user
+
+// //     const hashedPassword = crypto.createHash("sha256") .update(password).digest("hex")
+
+// //     try{
+// //         let users =[]
+// //         if(await fs.access(this.fillePath).then(()=>true).catch(()=>fzlse)){
+// //          user.JSON.parse(fileContent)
+// //         }
+// //         users.push({nombre,apellido,username,password: hashedPassword})
+// //         await fs.writeFile(this.fillePath.JSON.stringify(users,null,2))
+// //         console.log("usuario creado correctamente")
+// //     }catch(error){
+// //         console.error("error al crear el usuario"error )
+// //     }
+
+// // }
+// // async validateuser(username,password){
+// // try{
+// //     if(await fs.access(this.fillePath).then(()=>true).catch(()=> false)){
+// //         const fileContent =await fs.readFile(this.fillePath,"utf8")
+// //         const users= JSON.parse(fileContent)
+
+// //         const user = users.find(u => u.username === username)
+
+// //         if(user){
+// //             const hashedPassword = crypto.createHash("sha256").update
+// //             (password).digest("hex")
+// //             if(hashedPassword === user. password){
+// //                 console.log("logueado")
+
+// //             }else{
+// //                 console.log("contraseña")
+// //             }
+
+
+// //         }else{
+// //             console.log("usuario error no encontrado")
+// //         }
+// //     } else{
+// //         console.log("no hay usuarios")
+// //     }
+    
+    
+    
+// //     }
+// //     catch (error) {
+// //         console.log("error validar usuario")
+// //     }
+// // }
+// // }
+
+// falta seguir editando ejemplo
+
+
+    
