@@ -1,21 +1,2 @@
-[
-    {
-      "id": 1,
-      "title": "Manzanas",
-      "description": "Rojas",
-      "price": 2000,
-      "thumbnail": "m1",
-      "code": "apple123",
-      "stock": 100
-    },
-    {
-      "id": 2,
-      "title": "Bananos",
-      "description": "Pequeños",
-      "price": 1800,
-      "thumbnail": "B2",
-      "code": "banana456",
-      "stock": 200
-    }
-  ]
+[]
   

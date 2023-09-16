@@ -16,7 +16,24 @@ class ProductManager {
       this.products = JSON.parse(data);
     } catch (error) {
       console.error('Error initializing ProductManager:', error.message);
-      this.products = [];
+      this.products = [{
+        "id": 1,
+        "title": "Manzanas",
+        "description": "Rojas",
+        "price": 2000,
+        "thumbnail": "m1",
+        "code": "apple123",
+        "stock": 100
+      },
+      {
+        "id": 2,
+        "title": "Bananos",
+        "description": "Pequeños",
+        "price": 1800,
+        "thumbnail": "B2",
+        "code": "banana456",
+        "stock": 200
+      }];
     }
   }
 
@@ -29,7 +46,7 @@ class ProductManager {
   }
 }
 
-const productManager = new ProductManager('products.json');
+const productManager = new ProductManager('/products.json');
 
 App.use(express.json());
 
